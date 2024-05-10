@@ -1,0 +1,14 @@
+def count_words_with_regex(text):
+    # 使用正则表达式分割字符串，这里匹配任何空白字符（包括空格、制表符、换行符等）
+    words = re.split(r'\s+', text)
+    # 过滤掉空字符串（如果有的话）
+    words = [word for word in words if word]
+    # 返回单词列表的长度
+    return len(words)
+
+
+# 示例字符串，包含一些空白字符
+text = "Hello, my name is John"
+# 调用函数并打印结果
+print(count_words_with_regex(text))  # 输出: 5
+
