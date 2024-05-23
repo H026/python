@@ -1,0 +1,13 @@
+path='attack.csv'
+def new(path):
+
+data=[line.strip() for line in open(path,'r') if line.strip()]
+data=set(data)
+# print(data)
+data_dict={}
+for i in data:
+  if i in data_dict:
+          data_dict[i]+=1
+  else:
+          data_dict[i]=1
+          print(data_dict)
