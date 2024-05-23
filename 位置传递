@@ -1,0 +1,11 @@
+def user_info(*args):
+#     print(args)
+# #('Tom')
+# user_info('Tom')
+# #('Tom',18)
+# user_info('Tom',18)
+#
+# def user_info(**kwargs):
+#     print(kwargs)
+# #('name':'Tom','age':'18','id':'110')
+# user_info(name='Tom',age=18,id=110)
